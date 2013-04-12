@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013-04-10 10:57:44.208.cpp,C:\Users\user\Documents\RAD Studio\Projects\Unit2.cpp=C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.cpp</Transaction>
+    <Transaction>2013-04-10 10:57:44.208.h,C:\Users\user\Documents\RAD Studio\Projects\Unit2.h=C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.h</Transaction>
+    <Transaction>2013-04-10 10:57:44.208.dfm,C:\Users\user\Documents\RAD Studio\Projects\Unit2.dfm=C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.dfm</Transaction>
+    <Transaction>2013-04-10 10:58:14.100.cbproj,C:\Users\user\Documents\RAD Studio\Projects\Project1.cbproj=C:\Users\user\Documents\RAD Studio\Projects\Test2\serialTest.cbproj</Transaction>
+    <Transaction>2013-04-10 17:05:47.780.cpp,C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.cpp=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormMain.cpp</Transaction>
+    <Transaction>2013-04-10 17:05:47.780.h,C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.h=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormMain.h</Transaction>
+    <Transaction>2013-04-10 17:05:47.780.dfm,C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.dfm=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormMain.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
