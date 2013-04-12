@@ -137,10 +137,6 @@ void __fastcall TfrmMain::testOffClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-
-
-
-
 void __fastcall TfrmMain::btnClear1Click(TObject *Sender)
 {
 	lstInlog->Items->Clear();
@@ -157,4 +153,5 @@ void __fastcall TfrmMain::vEventMessage(String msg)
 	String strT   = FormatDateTime("YYYY.MM.DD HH:NN:SS:ZZZ", Now());
 	mmOut->Lines->Add(strT + " : " + msg);
 }
+
 
