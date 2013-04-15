@@ -30,35 +30,27 @@ void printLists(const list<int>& l1, const list<int>& l2)
 
 int main()
 {
-     //두개의 빈 list를 생성한다.
-	 list<int> list1,list2;
+//	ansistring inMsg;
+//	ComPort1->WriteStr("msg");
 
-     //0~6의 값으로 두 list를 채운다.
-     for(int i=0; i<6; ++i)
-	 {
-      list1.push_back(i);
-      list2.push_front(i);
-     }
-	 printLists(list1,list2);
-	 Sleep(5000);
+//	// 초기화 과정
+//	ComPort1->WriteStr("DET:BAND 20");
+//	ComPort1->WriteStr("ZERO:AUTO ON");
+//	ComPort1->WriteStr("INP:IMP:AUTO OFF");
+//	ComPort1->WriteStr("SAMP:COUN 1");
+//	ComPort1->WriteStr("TRIG:DEL:AUTO ON");
+//	ComPort1->WriteStr("TRIG:SOUR IMM");
+//	ComPort1->WriteStr("CALC:STAT OFF");
 
-	 //list2에서 값을 3으로 가지는 원소의 위치에 list1의 모든 원소들을 삽입한다.
-	 //find()는 값이 3인 최초의 원소의 위치를 반환한다.
-	 list2.splice(find(list2.begin(),list2.end(),3), list1);
-	 printLists(list1, list2);
-	 Sleep(5000);
-	 //첫 번째 원소를 마지막으로 이동시킨다.
-	 list2.splice(list2.end(),list2,list2.begin());
-	 printLists(list1, list2);
-	 Sleep(5000);
-	 //list2를 정렬한후 list1에 할당한다. 그리고 나서 list2의 중복된 값들을 제거한다.
-	 list2.sort();
-	 list1=list2;
-	 list2.unique();
-	 printLists(list1,list2);
-	 Sleep(5000);
-	 //list2를 list1에 병합한다.
-	 list1.merge(list2);
-	 printLists(list1,list2);
-	 Sleep(5000);
+//	//측정 상태 설정 - 전압값 읽기
+//	ComPort1->WriteStr("MEAS: VOLT: DC? DEF, DEF");
+//	ComPort1->WriteStr("CONF: VOLT: DC? DEF, DEF");
+//	//트리거 조건 설정
+//	ComPort1->WriteStr("TRIG: SOUR EXT");
+//	//멀티미터 시작
+//	ComPort1->WriteStr("INIT");
+//	//기록을 받음
+//	ComPort1->WriteStr("FETC?");
+//	//기록을 읽음
+//    ComPort1->ReadStr(inMsg,6);
 }

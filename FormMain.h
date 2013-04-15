@@ -12,6 +12,7 @@
 #include <Buttons.hpp>
 #include "CPort.hpp"
 #include <DBCtrls.hpp>
+#include <ComCtrls.hpp>
 //---------------------------------------------------------------------------
 class TfrmMain : public TForm
 {
@@ -32,25 +33,31 @@ __published:	// IDE-managed Components
 	TMemo *mmOut;
 	TLabel *Label2;
 	TLabel *Label3;
-	TPanel *Panel3;
-	TListBox *lstInlog;
-	TLabel *Label4;
 	TButton *btnClear1;
 	TPanel *Panel4;
+	TTimer *Timer1;
 	TPanel *Panel5;
+	TScrollBox *scrBox;
+	TButton *Button2;
 	TLabel *Label5;
-	TListBox *lstOutlog;
-	TButton *btnClear2;
-	TButton *btnInit;
+	TListBox *lstCtcmd;
+	TListBox *lstCmd;
+	TPanel *Panel3;
+	TListView *lstEvtlog;
+	TPanel *Panel6;
+	TSplitter *Splitter1;
 	void __fastcall close1Click(TObject *Sender);
 	void __fastcall btnConnectClick(TObject *Sender);
 	void __fastcall cbxPortClick(TObject *Sender);
 	void __fastcall testOnClick(TObject *Sender);
 	void __fastcall testOffClick(TObject *Sender);
 	void __fastcall btnClear1Click(TObject *Sender);
-	void __fastcall btnClear2Click(TObject *Sender);
+	void __fastcall btnTestClick(TObject *Sender);
+	void __fastcall Timer1Timer(TObject *Sender);
+	void __fastcall lstCtcmdDblClick(TObject *Sender);
 private:   	// User declarations
 	void __fastcall vEventMessage(String msg);
+	void __fastcall	CmdList(int cmd);
 public:		// User declarations
 	__fastcall TfrmMain(TComponent* Owner);
 };
