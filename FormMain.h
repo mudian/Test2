@@ -13,6 +13,7 @@
 #include "CPort.hpp"
 #include <DBCtrls.hpp>
 #include <ComCtrls.hpp>
+#include "FormCmd.h"
 //---------------------------------------------------------------------------
 class TfrmMain : public TForm
 {
@@ -40,27 +41,50 @@ __published:	// IDE-managed Components
 	TScrollBox *scrBox;
 	TButton *Button2;
 	TLabel *Label5;
-	TListBox *lstCtcmd;
+	TListBox *lstStat;
 	TListBox *lstCmd;
 	TPanel *Panel3;
 	TListView *lstEvtlog;
-	TPanel *Panel6;
 	TSplitter *Splitter1;
+	TPanel *Panel6;
+	TButton *Button1;
+	TButton *Button3;
+	TButton *Button4;
+	TButton *Button5;
+	TButton *Button6;
+	TButton *Button7;
+	TButton *btnInit;
+	TPanel *Panel7;
+	TPanel *Panel8;
+	TMemo *mmoDisp;
+	TPanel *pnl1;
+	TButton *btnDisp1;
+	TButton *btnDisp2;
+	TButton *btnDisp3;
+	TPanel *pnl2;
+	TComboBox *cbbSetting;
+	TComboBox *cbbFunc;
 	void __fastcall close1Click(TObject *Sender);
 	void __fastcall btnConnectClick(TObject *Sender);
-	void __fastcall cbxPortClick(TObject *Sender);
 	void __fastcall testOnClick(TObject *Sender);
 	void __fastcall testOffClick(TObject *Sender);
 	void __fastcall btnClear1Click(TObject *Sender);
 	void __fastcall btnTestClick(TObject *Sender);
 	void __fastcall Timer1Timer(TObject *Sender);
-	void __fastcall lstCtcmdDblClick(TObject *Sender);
+	void __fastcall lstStatClick(TObject *Sender);
+	void __fastcall cbbSettingChange(TObject *Sender);
+	void __fastcall lstStatDblClick(TObject *Sender);
+	void __fastcall cbbFuncChange(TObject *Sender);
 private:   	// User declarations
+	TCmd_ID m_Cmd_ID;
+
 	void __fastcall vEventMessage(String msg);
-	void __fastcall	CmdList(int cmd);
 public:		// User declarations
 	__fastcall TfrmMain(TComponent* Owner);
+
+	
 };
+
 //---------------------------------------------------------------------------
 extern PACKAGE TfrmMain *frmMain;
 //---------------------------------------------------------------------------

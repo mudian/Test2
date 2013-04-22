@@ -8,5 +8,10 @@
     <Transaction>2013-04-10 17:05:47.780.cpp,C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.cpp=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormMain.cpp</Transaction>
     <Transaction>2013-04-10 17:05:47.780.h,C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.h=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormMain.h</Transaction>
     <Transaction>2013-04-10 17:05:47.780.dfm,C:\Users\user\Documents\RAD Studio\Projects\Test2\frmMain.dfm=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormMain.dfm</Transaction>
+    <Transaction>2013-04-20 15:58:22.161.cpp,C:\Users\user\Documents\RAD Studio\Projects\Test2\Unit2.cpp=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormCmd.cpp</Transaction>
+    <Transaction>2013-04-20 15:58:22.161.h,C:\Users\user\Documents\RAD Studio\Projects\Test2\Unit2.h=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormCmd.h</Transaction>
+    <Transaction>2013-04-20 15:58:22.161.dfm,C:\Users\user\Documents\RAD Studio\Projects\Test2\Unit2.dfm=C:\Users\user\Documents\RAD Studio\Projects\Test2\FormCmd.dfm</Transaction>
+    <Transaction>2013-04-22 10:45:54.067.CPP,c:\program files\codegear\rad studio\5.0\ObjRepos\Cpp\okcancl1.CPP=</Transaction>
+    <Transaction>2013-04-22 10:45:54.067.dfm,c:\program files\codegear\rad studio\5.0\ObjRepos\Cpp\okcancl1.dfm=</Transaction>
   </Transactions>
 </BorlandProject>

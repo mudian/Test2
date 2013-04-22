@@ -12,6 +12,7 @@ object frmMain: TfrmMain
   Font.Style = []
   Menu = MainMenu1
   OldCreateOrder = False
+  Position = poDesigned
   PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
@@ -22,7 +23,6 @@ object frmMain: TfrmMain
     Align = alTop
     BorderWidth = 5
     TabOrder = 0
-    ExplicitLeft = -8
     object Label1: TLabel
       Left = 6
       Top = 6
@@ -31,7 +31,7 @@ object frmMain: TfrmMain
       Align = alLeft
       Caption = #53685#49888' '#49444#51221
       Layout = tlCenter
-      ExplicitLeft = 9
+      ExplicitHeight = 13
     end
     object btnConnect: TSpeedButton
       Left = 531
@@ -55,7 +55,6 @@ object frmMain: TfrmMain
       ItemIndex = 3
       TabOrder = 0
       Text = 'COM4'
-      OnClick = cbxPortClick
       Items.Strings = (
         'COM1'
         'COM2'
@@ -95,8 +94,6 @@ object frmMain: TfrmMain
       Anchors = [akLeft, akTop, akRight, akBottom]
       Caption = '34401A Multi Meter'
       TabOrder = 2
-      ExplicitTop = 3
-      ExplicitWidth = 346
     end
   end
   object Panel2: TPanel
@@ -107,7 +104,6 @@ object frmMain: TfrmMain
     Align = alTop
     BorderWidth = 5
     TabOrder = 1
-    ExplicitLeft = 8
     object Label2: TLabel
       Left = 308
       Top = 6
@@ -116,8 +112,6 @@ object frmMain: TfrmMain
       Align = alLeft
       Caption = #52636#47141' '#45236#50857
       Layout = tlCenter
-      ExplicitLeft = 312
-      ExplicitTop = 1
       ExplicitHeight = 13
     end
     object Label3: TLabel
@@ -150,9 +144,6 @@ object frmMain: TfrmMain
       Caption = 'b1'
       TabOrder = 1
       OnClick = testOnClick
-      ExplicitLeft = 237
-      ExplicitTop = 1
-      ExplicitHeight = 70
     end
     object testOff: TButton
       Left = 536
@@ -163,9 +154,6 @@ object frmMain: TfrmMain
       Caption = 'b2'
       TabOrder = 2
       OnClick = testOffClick
-      ExplicitLeft = 566
-      ExplicitTop = 1
-      ExplicitHeight = 70
     end
     object mmOut: TMemo
       Left = 359
@@ -185,8 +173,6 @@ object frmMain: TfrmMain
     Align = alBottom
     BorderWidth = 5
     TabOrder = 2
-    ExplicitTop = 576
-    ExplicitWidth = 624
     object Label5: TLabel
       AlignWithMargins = True
       Left = 9
@@ -197,8 +183,7 @@ object frmMain: TfrmMain
       Alignment = taCenter
       Caption = #53685#49888' '#47196#44536
       Layout = tlCenter
-      ExplicitLeft = 6
-      ExplicitHeight = 24
+      ExplicitHeight = 13
     end
     object btnClear1: TButton
       Left = 63
@@ -209,9 +194,6 @@ object frmMain: TfrmMain
       Caption = #47196#44536' '#49325#51228
       TabOrder = 0
       OnClick = btnClear1Click
-      ExplicitLeft = 0
-      ExplicitTop = 2
-      ExplicitHeight = 22
     end
     object Button2: TButton
       Left = 138
@@ -221,9 +203,6 @@ object frmMain: TfrmMain
       Align = alLeft
       Caption = 'Button1'
       TabOrder = 1
-      ExplicitLeft = 96
-      ExplicitTop = 8
-      ExplicitHeight = 25
     end
   end
   object scrBox: TScrollBox
@@ -233,8 +212,6 @@ object frmMain: TfrmMain
     Height = 409
     Align = alClient
     TabOrder = 3
-    ExplicitWidth = 624
-    ExplicitHeight = 497
     object Splitter1: TSplitter
       Left = 0
       Top = 402
@@ -246,56 +223,247 @@ object frmMain: TfrmMain
       ExplicitTop = 65
       ExplicitWidth = 359
     end
-    object lstCtcmd: TListBox
-      Left = 88
-      Top = 73
-      Width = 520
-      Height = 97
-      ImeName = 'Microsoft Office IME 2007'
-      ItemHeight = 13
-      Items.Strings = (
-        'Measure? Commands'
-        'Configure Commands'
-        'Measurement Configuration Commands'
-        'Math Operation Commands'
-        'Triggering Commands'
-        'System-Related Commands'
-        'Status Reporting Commands'
-        'Calibration Commands'
-        'RS-232 Interface Commands'
-        'IEEE-488.2 Common Commands'
-        'etc.'
-        '')
-      TabOrder = 0
-      OnDblClick = lstCtcmdDblClick
-    end
-    object lstCmd: TListBox
-      Left = 88
-      Top = 176
-      Width = 519
-      Height = 105
-      ImeName = 'Microsoft Office IME 2007'
-      ItemHeight = 13
-      TabOrder = 1
-    end
     object Panel3: TPanel
       Left = 0
-      Top = 65
+      Top = 0
       Width = 82
-      Height = 337
+      Height = 402
       Align = alLeft
-      TabOrder = 2
-      ExplicitLeft = 5
-      ExplicitTop = 71
+      TabOrder = 0
+      object Button1: TButton
+        Left = 1
+        Top = 151
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = 'Button1'
+        TabOrder = 0
+      end
+      object Button3: TButton
+        Left = 1
+        Top = 126
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = 'Button1'
+        TabOrder = 1
+      end
+      object Button4: TButton
+        Left = 1
+        Top = 101
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = 'Button1'
+        TabOrder = 2
+      end
+      object Button5: TButton
+        Left = 1
+        Top = 76
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = 'Button1'
+        TabOrder = 3
+      end
+      object Button6: TButton
+        Left = 1
+        Top = 51
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = 'Button1'
+        TabOrder = 4
+      end
+      object Button7: TButton
+        Left = 1
+        Top = 26
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = 'Button1'
+        TabOrder = 5
+      end
+      object btnInit: TButton
+        Left = 1
+        Top = 1
+        Width = 80
+        Height = 25
+        Align = alTop
+        Caption = #49444#51221' '#52488#44592#54868
+        TabOrder = 6
+      end
     end
     object Panel6: TPanel
-      Left = 0
+      Left = 82
       Top = 0
-      Width = 608
-      Height = 65
-      Align = alTop
-      TabOrder = 3
-      ExplicitWidth = 632
+      Width = 526
+      Height = 402
+      Align = alClient
+      TabOrder = 1
+      object lstCmd: TListBox
+        Left = 1
+        Top = 180
+        Width = 524
+        Height = 103
+        Align = alClient
+        ImeName = 'Microsoft Office IME 2007'
+        ItemHeight = 13
+        TabOrder = 0
+      end
+      object lstStat: TListBox
+        Left = 1
+        Top = 26
+        Width = 524
+        Height = 154
+        Align = alTop
+        ImeName = 'Microsoft Office IME 2007'
+        ItemHeight = 13
+        TabOrder = 1
+        OnClick = lstStatClick
+        OnDblClick = lstStatDblClick
+      end
+      object Panel7: TPanel
+        Left = 1
+        Top = 376
+        Width = 524
+        Height = 25
+        Align = alBottom
+        TabOrder = 2
+      end
+      object Panel8: TPanel
+        Left = 1
+        Top = 283
+        Width = 524
+        Height = 93
+        Align = alBottom
+        TabOrder = 3
+        object mmoDisp: TMemo
+          Left = 65
+          Top = 1
+          Width = 458
+          Height = 91
+          Align = alClient
+          ImeName = 'Microsoft Office IME 2007'
+          Lines.Strings = (
+            'Memo1')
+          TabOrder = 0
+        end
+        object pnl1: TPanel
+          Left = 1
+          Top = 1
+          Width = 64
+          Height = 91
+          Align = alLeft
+          Caption = 'pnl1'
+          TabOrder = 1
+          object btnDisp1: TButton
+            Left = 1
+            Top = 1
+            Width = 62
+            Height = 30
+            Align = alTop
+            Caption = 'Button1'
+            TabOrder = 0
+          end
+          object btnDisp2: TButton
+            Left = 1
+            Top = 61
+            Width = 62
+            Height = 30
+            Align = alTop
+            Caption = 'Button1'
+            TabOrder = 1
+          end
+          object btnDisp3: TButton
+            Left = 1
+            Top = 31
+            Width = 62
+            Height = 30
+            Align = alTop
+            Caption = 'Button1'
+            TabOrder = 2
+          end
+        end
+      end
+      object pnl2: TPanel
+        Left = 1
+        Top = 1
+        Width = 524
+        Height = 25
+        Align = alTop
+        TabOrder = 4
+        object cbbSetting: TComboBox
+          Left = 1
+          Top = 1
+          Width = 327
+          Height = 21
+          HelpType = htKeyword
+          Align = alClient
+          Style = csDropDownList
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ImeName = 'Microsoft Office IME 2007'
+          ItemHeight = 13
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = False
+          TabOrder = 0
+          OnChange = cbbSettingChange
+          Items.Strings = (
+            #49444#51221' '#45824#44592
+            'Measure?'
+            'Configure'
+            'MEasurement Configuration'
+            'Math Operation'
+            'Triggering'
+            'System-Related'
+            'Status Reporting'
+            'Calibration '
+            'RS-232 Interface'
+            'etc.')
+        end
+        object cbbFunc: TComboBox
+          Left = 328
+          Top = 1
+          Width = 195
+          Height = 21
+          HelpType = htKeyword
+          Align = alRight
+          Style = csDropDownList
+          Font.Charset = DEFAULT_CHARSET
+          Font.Color = clWindowText
+          Font.Height = -11
+          Font.Name = 'Tahoma'
+          Font.Style = []
+          ImeName = 'Microsoft Office IME 2007'
+          ItemHeight = 13
+          ParentFont = False
+          ParentShowHint = False
+          ShowHint = False
+          TabOrder = 1
+          Visible = False
+          OnChange = cbbFuncChange
+          Items.Strings = (
+            #54632#49688
+            'Voltage:DC:'
+            'Voltage:DC:Ratio:'
+            'Voltage:AC:'
+            'Current:DC:'
+            'Current:AC:'
+            'Resistance (2-wire ohms)'
+            'Fresistance (4-wire ohms)'
+            'Frequency'
+            'Period'
+            'Continuity'
+            'Diode')
+          ExplicitLeft = 334
+          ExplicitTop = -1
+        end
+      end
     end
   end
   object lstEvtlog: TListView
